@@ -863,6 +863,39 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     {
        nSubsidy = 0.00042 * COIN;
 	}
+    if(nHeight >= 424242+42*42*42) //  498330
+    {
+       nSubsidy = 0.000024 * COIN;
+        }    
+    if(nHeight >= 4242424-42*42*42*42) // 1130728
+    {
+       nSubsidy = 0.0000042 * COIN;
+        }    
+    if(nHeight >= 4242424-2424242) // 1818182
+    {
+       nSubsidy = 0.0000024 * COIN;
+    } 
+    if(nHeight >= 42*42*42*42-242424-42424*4.2) //2691092
+
+    {
+       nSubsidy = 0.00000042 * COIN;
+    }    
+    if(nHeight >= 42*42*42*42+424242) // 3535938
+    {
+       nSubsidy = 0.00000024 * COIN;
+    }
+    if(nHeight >= 4242424-242424) // 4000000
+    {
+       nSubsidy = 0.00000004 * COIN;
+    }
+    if(nHeight >= 4242424) // 4000000
+    {
+       nSubsidy = 0.00000002 * COIN;
+    }
+    if(nHeight >= 5764134) // we have 42 coins!
+    {
+       nSubsidy = 0;
+    }
     return nSubsidy + nFees;
 }
 
