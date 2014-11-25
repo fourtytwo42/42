@@ -839,6 +839,29 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     {
        nSubsidy = 0.0000001 * COIN;
 	}
+    if(nHeight >= 424242+42*42*42) //  block 498330 -- time to start decreasing the reward
+    {
+       nSubsidy = 0.000024 * COIN;
+        }    
+    if(nHeight >= 4242424-42*42*42*42) // block 1130728
+    {
+       nSubsidy = 0.0000042 * COIN;
+        }    
+    if(nHeight >= 4242424-2424242) // block 1818182
+    {
+       nSubsidy = 0.0000024 * COIN;
+        } 
+    if(nHeight >= 42*42*42*42-242424-42*42*42) // block 2869272
+    {
+       nSubsidy = 0.00000042 * COIN;
+        }    
+    if(nHeight >= 4242424-424242-424242+24242+4242-242+42+42+42+4.2+2.4) // block 3422314.6 
+		// we have 41.99999988 coins.  almost there...
+    {
+       nSubsidy = 0;  // no more reward, only fees
+        }
+
+    // special blocks:
     if(nHeight == 1)
     {
        nSubsidy = 0.42 * COIN;
@@ -861,7 +884,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 	}
     if(nHeight == 4242424)
     {
-       nSubsidy = 0.00042 * COIN;
+       nSubsidy = 42-24-42/42-42/42-42/42-42/42-42/42-42/42;  // those last 12 satoshi.  didn't think i would forget thme did you?
+         //  in this block, block 4242424 we have finally released all 42 42coin
 	}
     return nSubsidy + nFees;
 }
