@@ -1,8 +1,8 @@
-42 - a fork of Litecoin version with fast block time and faster confirmations (2 confirmations needed instead of 6). Like Litecoin it uses scrypt as a proof of work scheme.
+42-limited-edition - a fork of Litecoin version with fast block time and faster confirmations (2 confirmations needed instead of 6). Like Litecoin it uses scrypt as a proof of work scheme.
 
 	- 42 second block target
 	- Difficulty retargets every 7 minutes
-	- Total coins will be only 42
+	- Total coins will be only 42  --   this time for real yo!
 	- The default ports are 24242 (connect) and 4242 (json rpc).
 
 
